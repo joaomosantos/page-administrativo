@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <title>Login - Administrativo</title>
+  <title>Login - Backoffice</title>
 
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
   <link rel="stylesheet" href="assets/css/vendor/normalize.min.css">

@@ -10,18 +10,18 @@
   <title>Home - Administrativo</title>
 
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
-  <link rel="stylesheet" href="../css/vendor/normalize.min.css">
-  <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/vendor/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="../css/vendor/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor/normalize.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor/font-awesome.min.css">
 </head>
 <body>
-  <?php require_once('../inc/session.php'); ?>
-  <?php require_once('../inc/database.php'); ?>
+  <?php require_once('../../inc/session.php'); ?>
+  <?php require_once('../../inc/database.php'); ?>
   <?php 
   echo "Olá " . $_SESSION["admin"];
   echo "<BR><BR>";
   ?>
-  <a href="../inc/logoff.php">Log off</a>
+  <a href="../../inc/logoff.php">Log off</a>
 </body>
 </html>

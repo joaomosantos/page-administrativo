@@ -17,7 +17,7 @@
       <?php
         session_start();
         $_SESSION["admin"] = $registro -> nome;
-        header("Location: backoffice/home.php");
+        header("Location: views/home/index.php");
       ?>
     <?php else: ?>
       <div class="alert alert-danger" role="alert">

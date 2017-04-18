@@ -20,8 +20,8 @@
   <?php require_once('../../inc/session.php'); ?>
   <?php require_once('../../inc/database.php'); ?>
   <?php 
-  echo "Olá " . $_SESSION["admin"];
-  echo "<BR><BR>";
+    echo "Olá " . $_SESSION["usuario"];
+    echo "<BR><BR>";
   ?>
   <a href="../../inc/logoff.php">Log off</a>
 </body>

@@ -21,7 +21,7 @@
       ?>
     <?php else: ?>
       <div class="alert alert-danger" role="alert">
-        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Usuario e/ou Senha invalido(a)!
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> E-mail e/ou Senha invalido(a).
       </div>
     <?php endif; ?>
   <?php else: ?>

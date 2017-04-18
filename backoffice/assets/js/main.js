@@ -28,23 +28,23 @@ $(function() {
 		},
 		messages: {
 			nome: {
-				required: 'Campo obrigatorio',
-				minlength: 'O campo precisa ter no minimo 3 caracter',
-				maxlength: 'O campo precisa ter no maximo 30 caracter'
+				required: 'Campo obrigatorio.',
+				minlength: 'O campo precisa ter no minimo 3 caracter.',
+				maxlength: 'O campo precisa ter no maximo 30 caracter.'
 			},
 			email: {
-				required: 'Campo obrigatorio',
-				email: 'Informe um e-mail valido'
+				required: 'Campo obrigatorio.',
+				email: 'Informe um e-mail valido.'
 			},
 			nascimento: {
-				required: 'Campo obrigatorio',
-				pattern: 'Formato de data invalido'
+				required: 'Campo obrigatorio.',
+				pattern: 'Formato de data invalido.'
 			},
 			senha: {
-				required: 'Campo obrigatorio',
-				minlength: 'A senha precisa ter no minimo 6 caracter',
+				required: 'Campo obrigatorio.',
+				minlength: 'A senha precisa ter no minimo 6 caracter.',
 			},
-			confirmasenha: 'A senha não é identica'
+			confirmasenha: 'A senha não é identica.'
 		}
 	});
 });

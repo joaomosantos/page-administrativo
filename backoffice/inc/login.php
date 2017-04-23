@@ -14,7 +14,8 @@
       <?php if($registro -> ativo == 1): ?>
         <?php
           session_start();
-          $_SESSION["usuario"] = $registro -> nome;
+          $nome = explode(" ", $registro -> nome);
+          $_SESSION["usuario"] = $nome[0];
           $_SESSION["horario"] = time();
           header("Location: views/index.php");
         ?>

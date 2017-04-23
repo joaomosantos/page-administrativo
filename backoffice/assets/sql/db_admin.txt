@@ -1,5 +1,0 @@
-// Criar tabela admin
-
-CREATE TABLE `develop`.`admin` ( `id` INT NOT NULL AUTO_INCREMENT , `nome` VARCHAR(30) NOT NULL , `email` VARCHAR(40) NOT NULL , `senha` VARCHAR(40) NOT NULL , `ativo` TINYINT(1) NOT NULL , PRIMARY KEY (`id`));
-
-// Inserir dados admin

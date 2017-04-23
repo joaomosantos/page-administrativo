@@ -1,0 +1,7 @@
+// Criar tabela usuarios
+
+CREATE TABLE `dbo_develop`.`tb_users` ( `id` INT NOT NULL AUTO_INCREMENT , `nome` VARCHAR(30) NOT NULL , `email` VARCHAR(40) NOT NULL , `senha` VARCHAR(40) NOT NULL , `ativo` TINYINT(1) NOT NULL , PRIMARY KEY (`id`));
+
+// Inserir usuario
+
+INSERT INTO `tb_users` (`id`, `nome`, `email`, `senha`, `ativo`) VALUES (NULL, 'Administrador', 'root@administrador.com', '7f85eb35bf2a693af095232b05edd167', '1');

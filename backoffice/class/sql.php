@@ -6,7 +6,7 @@ class SQL extends PDO {
 
   public function __construct() {
     try {
-      $this -> conn = new PDO("mysql:host=localhost;dbname=develop", "root", "");
+      $this -> conn = new PDO("mysql:host=localhost;dbname=dbo_develop", "root", "");
       $this -> conn -> exec("set names utf8");
     } catch(PDOException $e) {
       echo "Error: " . utf8_encode($e -> getMessage());

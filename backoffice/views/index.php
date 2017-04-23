@@ -10,15 +10,14 @@
   <title>Home - Backoffice</title>
 
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
-  <link rel="stylesheet" href="../../assets/css/vendor/normalize.min.css">
-  <link rel="stylesheet" href="../../assets/css/vendor/bootstrap.min.css">
-  <link rel="stylesheet" href="../../assets/css/vendor/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="../../assets/css/vendor/font-awesome.min.css">
-  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/vendor/normalize.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="../assets/css/vendor/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
-  <?php require_once('../../inc/session.php'); ?>
-  <?php require_once('../../inc/database.php'); ?>
+  <?php require_once("..". DIRECTORY_SEPARATOR ."inc". DIRECTORY_SEPARATOR ."session.php"); ?>
 
   <div class="container">
     <nav class="navbar navbar-inverse">
@@ -56,7 +55,7 @@
                 <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i> <?=$_SESSION["usuario"]?> <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="../../inc/logoff.php"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i> Logoff</a></li>
+                <li><a href="../inc/logoff.php"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i> Logoff</a></li>
               </ul>
             </li>
           </ul>
@@ -65,7 +64,7 @@
     </nav>
   </div>
 
-  <script src="../../assets/js/vendor/jquery-2.2.4.min.js"></script>
-  <script src="../../assets/js/vendor/bootstrap.min.js"></script>
+  <script src="../assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="../assets/js/vendor/bootstrap.min.js"></script>
 </body>
 </html>

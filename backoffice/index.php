@@ -24,7 +24,7 @@
       <div class="panel-heading"><i class="fa fa-user-o" aria-hidden="true"></i> Painel Administrativo - Backoffice</div>
       <div class="panel-body">
 
-        <?php require_once("inc/login.php"); ?>
+        <?php require_once("inc". DIRECTORY_SEPARATOR ."login.php"); ?>
         <form id="form" method="post" action="?autenticar=true">
           <img src="uploads/backoffice.png" class="center-block img-thumbnail" alt="Backoffice Users">
           <div class="form-group">

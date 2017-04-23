@@ -1,15 +1,12 @@
 <?php if(isset($_REQUEST["autenticar"]) && isset($_REQUEST["autenticar"]) === true): ?>
 
   <?php
-    require_once("inc/database.php");
+    require_once("config.php");
 
-    $sql = "SELECT nome, ativo FROM admin WHERE email = ? AND senha = ?";
-    
-    $statement = $conn -> prepare($sql);
-    
-    $statement -> bindParam(1, $_POST["email"]);
-    $senha = md5($_POST["senha"] . TOKEN);
-    $statement -> bindParam(2, $senha);
+    $usuario = new Usuario();
+    $usuario -> setEmail($_POST["email"]);
+    $usuario -> setSenha($_POST["senha"]);
+    $statement = $usuario -> login($usuario -> getEmail(), $usuario -> getSenha());
   ?>
 
   <?php if($statement -> execute()): ?>
@@ -19,7 +16,7 @@
           session_start();
           $_SESSION["usuario"] = $registro -> nome;
           $_SESSION["horario"] = time();
-          header("Location: views/home/index.php");
+          header("Location: views/index.php");
         ?>
       <?php else: ?>
         <div class="alert alert-danger" role="alert">

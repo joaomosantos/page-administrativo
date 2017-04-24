@@ -51,7 +51,7 @@ class Usuario {
 
   public function login($email, $senha) {
     $sql = new SQL();
-    $stmt = $sql -> query("SELECT nome, ativo FROM tb_users WHERE email = :EMAIL AND senha = :SENHA");
+    $stmt = $sql -> query("SELECT * FROM tb_users WHERE email = :EMAIL AND senha = :SENHA");
     $stmt -> bindParam(":EMAIL", $email);
     $senha = $this -> criptografia($senha);
     $stmt -> bindParam(":SENHA", $senha);

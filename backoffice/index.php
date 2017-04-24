@@ -36,7 +36,7 @@
             <input class="form-control" type="password" id="senha" name="senha" placeholder="Senha">
           </div>
           <button type="submit" class="btn btn-primary btn-block">
-            <i class="fa fa-sign-in" aria-hidden="true"></i> Log In
+            <i class="fa fa-sign-in" aria-hidden="true"></i> Entrar
           </button>
         </form>
 

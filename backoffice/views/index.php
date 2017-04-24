@@ -56,7 +56,7 @@
                 <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i> <?=$nome[0];?> <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="../inc/logoff.php"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i> Logoff</a></li>
+                <li><a href="../inc/logoff.php"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i> Sair</a></li>
               </ul>
             </li>
           </ul>

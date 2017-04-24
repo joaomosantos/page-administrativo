@@ -4,9 +4,7 @@
     require_once("config.php");
 
     $usuario = new Usuario();
-    $usuario -> setEmail($_POST["email"]);
-    $usuario -> setSenha($_POST["senha"]);
-    $statement = $usuario -> login($usuario -> getEmail(), $usuario -> getSenha());
+    $statement = $usuario -> login($_POST["email"], $_POST["senha"]);
   ?>
 
   <?php if($statement -> execute()): ?>

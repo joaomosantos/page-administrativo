@@ -23,7 +23,7 @@
   <div class="container">
     <form id="form" method="post" action="?editar=true">
       <div class="panel panel-default">
-        <div class="panel-heading"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i> Editar perfil</div>
+        <div class="panel-heading"><i class="fa fa-key fa-lg" aria-hidden="true"></i> Editar senha</div>
         <div class="panel-body">
           <?php require_once("..". DIRECTORY_SEPARATOR ."inc". DIRECTORY_SEPARATOR ."editar_senha.php"); ?>
           <div class="form-group">

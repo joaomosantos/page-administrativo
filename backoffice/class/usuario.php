@@ -58,6 +58,21 @@ class Usuario {
     return $stmt;
   }
 
+  public function editarPerfil($id) {
+    $sql = new SQL();
+    $stmt = $sql -> query("UPDATE tb_users SET nome = :NOME, email = :EMAIL WHERE id = $id");
+    $nome = ucwords($this -> nome);
+    $stmt -> bindParam(":NOME", $nome);
+    $stmt -> bindParam(":EMAIL", $this -> email);
+    return $stmt;
+  }
+
+  public function getPerfil($id) {
+    $sql = new SQL();
+    $stmt = $sql -> query("SELECT * FROM tb_users WHERE id = $id");
+    return $stmt;
+  }
+
 }
 
 ?>

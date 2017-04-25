@@ -56,8 +56,8 @@
                 <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i> <?=$nome[0];?> <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="perfil.php"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i> Alterar perfil</a></li>
-                <li><a href="senha.php"><i class="fa fa-key fa-lg" aria-hidden="true"></i> Alterar senha</a></li>
+                <li><a href="perfil.php"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i> Editar perfil</a></li>
+                <li><a href="senha.php"><i class="fa fa-key fa-lg" aria-hidden="true"></i> Editar senha</a></li>
                 <li><a href="../inc/logoff.php"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i> Sair</a></li>
               </ul>
             </li>

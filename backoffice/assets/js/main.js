@@ -22,8 +22,12 @@ $(function() {
 				required: true,
 				minlength: 6,
 			},
-			confirmasenha: {
-				equalTo: "#senha"
+			novasenha: {
+				required: true,
+				minlength: 6,
+			},
+			confirmarsenha: {
+				equalTo: "#novasenha"
 			}
 		},
 		messages: {
@@ -44,7 +48,11 @@ $(function() {
 				required: 'Campo obrigatorio.',
 				minlength: 'A senha precisa ter no minimo 6 caracter.',
 			},
-			confirmasenha: 'A senha não é identica.'
+			novasenha: {
+				required: 'Campo obrigatorio.',
+				minlength: 'A senha precisa ter no minimo 6 caracter.',
+			},
+			confirmarsenha: 'A senha não é identica.'
 		}
 	});
 });

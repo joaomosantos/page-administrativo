@@ -67,6 +67,14 @@ class Usuario {
     return $stmt;
   }
 
+  public function editarSenha($id, $senha) {
+    $sql = new SQL();
+    $stmt = $sql -> query("UPDATE tb_users SET senha = :SENHA WHERE id = $id");
+    $senha = $this -> criptografia($senha);
+    $stmt -> bindParam(":SENHA", $senha);
+    return $stmt;
+  }
+
   public function getPerfil($id) {
     $sql = new SQL();
     $stmt = $sql -> query("SELECT * FROM tb_users WHERE id = $id");
